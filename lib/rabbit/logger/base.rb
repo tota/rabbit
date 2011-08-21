@@ -65,7 +65,7 @@ module Rabbit
         log(INFO, message_or_error, &block)
       end
       
-      def warn(message_or_error=nil, &block)
+      def warning(message_or_error=nil, &block)
         log(WARNING, message_or_error, &block)
       end
 
