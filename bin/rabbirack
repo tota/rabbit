@@ -90,6 +90,6 @@ when "shotgun"
 else
   require "rack"
   ARGV.shift if rack_runner == "rackup"
-  ARGV.unshift("--option", "config=#{config_ru_path}")
+  ARGV.unshift(":config", "#{config_ru_path}")
   Rack::Server.start
 end
